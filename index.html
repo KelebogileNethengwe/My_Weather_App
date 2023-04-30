@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-app-content">
+      <div class="search-city">
+        <form id="search-form">
+          <h1></h1>
+          <input
+            type="text"
+            class="city-search-box"
+            id="input-search"
+            placeholder="Search for a city"
+            autocomplete="off"
+          />
+          <input type="submit" value="Search" class="search-button" />
+          <input type="submit" value="Current" class="search-button2" />
+        </form>
+      </div>
+      <div>
+        <img src="media/sunny.png" width="299px" class="today-weather" />
+      </div>
+      <div class="today-weather-forecast">
+        <h2 class="today">
+          <span id="temperat">19</span>
+          <div class="unit">
+            <sup
+              ><a href="#" id="celsius">°C </a>|<a href="#" id="fah">°F</a></sup
+            >
+          </div>
+        </h2>
+
+        <p class="weather-condition">
+          <span id="empty">Tueday 16:00</span><br />
+          <span id="description">Mostly Sunny</span> <br />Precipitation: 1%<br />
+          Humidity: <span id="humidity">59</span>%<br />
+          Wind: <span id="wind">8</span> km/h
+        </p>
+      </div>
+
+      <hr class="horizontal-line" />
+      <div class="row days-of-the-week">
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <h2>Weekly Forecast</h2>
+            <div class="col Wednesday">
+              <h2>Wed</h2>
+              <img src="media/sunny.png" class="days-icons wed" />
+              <p>19°C</p>
+            </div>
+            <div class="col Thursday">
+              <h2>Thurs</h2>
+              <img src="media/sunny.png" class="days-icons thurs" />
+              <p>19°C</p>
+            </div>
+            <div class="col Friday">
+              <h2>Fri</h2>
+              <img src="media/thunderShowers.png" class="days-icons fri" />
+              <p>19°C</p>
+            </div>
+            <div class="col Saturday">
+              <h2>Sat</h2>
+              <img src="Media/partlyCloudy.png" class="days-icons sat" />
+              <p>19°C</p>
+            </div>
+            <div class="col Sunday">
+              <h2>Sun</h2>
+              <img src="Media/partlyCloudy.png" class="days-icons sun" />
+              <p>19°C</p>
+            </div>
+            <div class="col Monday">
+              <h2>Mon</h2>
+              <img src="Media/partlyCloudy.png" class="days-icons mon" />
+              <p>19°C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="index.js"></script>
+      <body>
+        <html></html>
+      </body>
+    </div>
+  </body>
+</html>
